@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RKDF AI Chatbot</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #cccccc;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex items-center justify-center text-gray-800">
+
+  <div class="bg-white shadow-2xl rounded-3xl overflow-hidden max-w-2xl w-full mx-4">
+    <div class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white text-center py-6">
+      <h1 class="text-2xl font-bold">🎓 RKDF University Chatbot</h1>
+      <p class="text-sm opacity-80 mt-1">Ask any question about RKDF University</p>
+    </div>
+
+    <div id="chatbox" class="p-4 h-[400px] overflow-y-auto space-y-3 bg-gray-50"></div>
+
+    <form id="chat-form" class="flex border-t p-4 bg-white">
+      <input id="user-input" type="text" placeholder="Type your question..." class="flex-1 px-4 py-2 border border-gray-300 rounded-l-xl focus:outline-none" required>
+      <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-r-xl">Send</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById("chat-form");
+    const input = document.getElementById("user-input");
+    const chatbox = document.getElementById("chatbox");
+
+    function appendMessage(sender, text) {
+      const bubble = document.createElement("div");
+      bubble.className = `max-w-[75%] px-4 py-2 rounded-xl whitespace-pre-wrap ${sender === "user"
+        ? "bg-indigo-100 self-end ml-auto text-right"
+        : "bg-gray-200 self-start mr-auto text-left"}`;
+      bubble.innerText = text;
+
+      const container = document.createElement("div");
+      container.className = "flex flex-col";
+      container.appendChild(bubble);
+
+      chatbox.appendChild(container);
+      chatbox.scrollTop = chatbox.scrollHeight;
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const question = input.value.trim();
+      if (!question) return;
+
+      appendMessage("user", question);
+      input.value = "";
+
+      const res = await fetch("chatbot.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: `query=${encodeURIComponent(question)}`
+      });
+
+      const data = await res.json();
+      appendMessage("bot", data.answer || "Sorry, I couldn't process that.");
+    });
+  </script>
+</body>
+</html>

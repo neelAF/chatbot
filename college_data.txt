@@ -1,0 +1,114 @@
+{
+  "university": "RKDF University Ranchi",
+  "full_form": "Ram Krishna Dharmarth Foundation",
+  "location": "Kathal More - Argora - Ranchi Rd, Dhipatoli, Pundag, Ranchi, Jharkhand 834004",
+  "established": 2018,
+  "overview": "RKDF University Ranchi was established under the Jharkhand government act and is recognized under UGC 2(f) 1956. It is a part of the RKDF Group, which has been involved in education and social causes since 1994. The group runs 162 institutions and 6 universities across India.",
+  "founder": "Ayushmati Education And Social Society",
+  "vision": [
+    "To establish a University of excellence to impart Higher Education through Knowledge, Pioneering Scholarship, Research and Teaching.",
+    "To improve the lives of many students through growth, prosperity and sustainable physical environment through education in the country.",
+    "To fulfil the commitment of providing Quality Education and empowering Excellence for a Better Jharkhand."
+  ],
+  "mission": [
+    "Harmonize Higher Education with excellence in Science and Technological output and contribute to livelihood, security and sustainable societal development.",
+    "To be recognized as a premium National University providing dedicated service for the Socio-Economic Development of the Nation.",
+    "To promote Entrepreneurship in Youth by imparting professional and life skills."
+  ],
+  "recognition": {
+    "ugc": true,
+    "aiu": true,
+    "government_approved": true,
+    "accreditations": ["UGC 2(f)", "AIU Membership", "AICTE (for specific programs)"]
+  },
+  "initiatives": [
+    "MoUs with companies for research and student exchange programs",
+    "Launched Tree Ambulance on 22nd August 2020 for tree treatment around Ranchi",
+    "Digital classrooms and e-learning initiatives",
+    "Entrepreneurship Development Cell (EDC) for startups"
+  ],
+  "logo_meaning": {
+    "top_flames": [
+      "Enlightenment",
+      "Knowledge",
+      "Transformation"
+    ],
+    "bottom_symbols": [
+      "Education",
+      "Glorification",
+      "Nation"
+    ]
+  },
+  "motto": "Education Glorifies Nation",
+  "schools": [
+    "School of Pharmacy",
+    "School of Law",
+    "School of Engineering & Technology",
+    "School of Information & Technology",
+    "School of Management",
+    "School of Basic and Applied Sciences",
+    "School of Life Sciences",
+    "School of Library Science",
+    "School of Commerce",
+    "School of Journalism and Mass Communication",
+    "School of Arts and Humanities",
+    "School of Fashion and Interior Designing",
+    "School of Agriculture",
+    "School of Nursing"
+  ],
+  "info_corner": [
+    "RTI Corner",
+    "News & Notices",
+    "Newsletters",
+    "Career (Job Openings)",
+    "Download Examination Forms",
+    "Study in India",
+    "Admission (International Students)",
+    "Convocation",
+    "Online Classes & LMS"
+  ],
+  "important_links": [
+    "Fellowships / Scholarships",
+    "National Scholarship Portal",
+    "Digi Locker NAD Portal",
+    "Academic Bank of Credits",
+    "Academic Bank of Credits (ABC) Videos",
+    "National Digital Library of India (NDLI)",
+    "Student Registration",
+    "Alumni Registration",
+    "Grievance Redressal Cell"
+  ],
+  "departments": [
+    "Computer Science",
+    "Mechanical Engineering",
+    "Civil Engineering",
+    "Electrical Engineering",
+    "Pharmaceutical Sciences",
+    "Business Administration",
+    "Biotechnology",
+    "Physics",
+    "Mathematics",
+    "Political Science",
+    "Journalism",
+    "Fashion Designing"
+  ],
+  "contact": {
+    "emails": [
+      "info@rkdfuniversity.org",
+      "admission@rkdfuniversity.org"
+    ],
+    "phones": [
+      "7091168777",
+      "7091168777"
+    ],
+    "address": "Near Satya Sai School, Hesal, Ranchi, Jharkhand 834002",
+    "google_map": "https://goo.gl/maps/5fz83y83ryS9Rk3F7",
+    "unique_visitors": 62591
+  },
+  "social_media": {
+    "facebook": "https://www.facebook.com/RKDFUniversityOfficial",
+    "twitter": "https://twitter.com/rkdfuniversity",
+    "linkedin": "https://www.linkedin.com/school/rkdf-university/"
+  },
+  "copyright": "© RKDF University, Ranchi (Jharkhand)"
+}
