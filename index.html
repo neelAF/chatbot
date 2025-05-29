@@ -16,6 +16,14 @@
       background: #cccccc;
       border-radius: 6px;
     }
+     .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
   </style>
 </head>
 <body class="min-h-screen flex items-center justify-center text-gray-800">
@@ -29,10 +37,14 @@
     <div id="chatbox" class="p-4 h-[400px] overflow-y-auto space-y-3 bg-gray-50"></div>
 
     <form id="chat-form" class="flex border-t p-4 bg-white">
-      <input id="user-input" type="text" placeholder="Type your question..." class="flex-1 px-4 py-2 border border-gray-300 rounded-l-xl focus:outline-none" required>
-      <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-r-xl">Send</button>
+      <input id="user-input" type="text" placeholder="Type your question..." class="flex-1 px-4 py-2 border border-gray-300 rounded-r-xl rounded-l-xl focus:outline-none" required>
+      <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-l-xl rounded-r-xl">Send</button>
     </form>
   </div>
+
+  <div class="footer">
+   &copy;2025 Design & Developed by Neelkant Pingua
+</div>
 
   <script>
     const form = document.getElementById("chat-form");
